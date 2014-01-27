@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/style.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.5.3.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="brand" href="@Url.Content("~/")">My MVC Application</a>
+                        <div class="nav-collapse collapse pull-right">
+                            <ul class="nav">
+                                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</li>
+                                <li>@Html.Partial("_LogOnPartial")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <hr />
+        <footer>
+            <p>&copy; Company @DateTime.Now.Year</p>
+        </footer>
+    </div>
+    <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>
+</body>
+</html>
