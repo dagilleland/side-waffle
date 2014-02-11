@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatePack", "TemplatePack\TemplatePack.csproj", "{66E5E42A-2905-4A93-A3F7-FD26DA48A25F}"
 EndProject
@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_SampleProjRef", "Project T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobsHelloWorld", "Project Templates\Azure\WebJobs\WebJobsHelloWorld\WebJobsHelloWorld.csproj", "{168B1B48-3C74-4793-888C-49989E749CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNancyTemplate", "MyNancyTemplate\MyNancyTemplate.csproj", "{A774CE45-65B8-4F4A-8ED0-233D1483AB63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,9 @@ Global
 		{168B1B48-3C74-4793-888C-49989E749CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{168B1B48-3C74-4793-888C-49989E749CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{168B1B48-3C74-4793-888C-49989E749CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A774CE45-65B8-4F4A-8ED0-233D1483AB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A774CE45-65B8-4F4A-8ED0-233D1483AB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A774CE45-65B8-4F4A-8ED0-233D1483AB63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
