@@ -7,8 +7,8 @@
     <StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>
     <StartArguments>/rootsuffix Exp</StartArguments>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
     <ZipPackageCompressionLevel>Normal</ZipPackageCompressionLevel>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -78,6 +78,44 @@
     <Content Include="ItemTemplates\Build and NuGet\NuGet\Basic .nuspec file\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\Build and NuGet\NuGet\Basic .nuspec file\icon.png" />
     <Content Include="ItemTemplates\Extensibility\BrowserLink\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Extensibility\JsonSchemaSelector\icon.png" />
+    <Content Include="ItemTemplates\Extensibility\JsonSchemaSelector\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctionsComplete\Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctionsComplete\Definitions\vb.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctionsComplete\icon.png" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctionsComplete\powershell-file-icon.png" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctions\Definitions\vb.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctions\Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctions\icon.png" />
+    <Content Include="ItemTemplates\PowerShell\CmdletAdvancedFunctions\powershell-file-icon.png" />
+    <Content Include="ItemTemplates\PowerShell\DscConfigurationSimple\Definitions\CSharp.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ItemTemplates\PowerShell\DscConfigurationSimple\Definitions\vb.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\DscConfigurationSimple\icon.png" />
+    <Content Include="ItemTemplates\PowerShell\DscConfigurationSimple\powershell-file-icon.png" />
+    <Content Include="ItemTemplates\PowerShell\DscResourceProvider\Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\DscResourceProvider\Definitions\vb.vstemplate" />
+    <Content Include="ItemTemplates\PowerShell\DscResourceProvider\icon.png" />
+    <Content Include="ItemTemplates\PowerShell\DscResourceProvider\powershell-file-icon.png" />
+    <Content Include="ItemTemplates\PowerShell\EmptyPowerShellFile\Definitions\vb.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\jQuery\BasicJsFile\icon.png" />
+    <Content Include="ItemTemplates\Web\JavaScript\jQuery\BasicJsFile\jQueryJSFile.js" />
+    <Content Include="ItemTemplates\Web\JavaScript\jQuery\BasicJsFile\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\jQuery\BasicJsFile\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\jQuery\BasicJsFile\_Definitions\Web.csharp.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Service01\icon.png" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Service01\service.js" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Service01\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Service01\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Service01\_Definitions\Web.csharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Test\icon.png" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Test\spec.js" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Test\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Test\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Test\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\Web\JavaScript\Mocha\icon.png" />
     <Content Include="ItemTemplates\Web\JavaScript\Mocha\template.js" />
     <Content Include="ItemTemplates\Web\JavaScript\Mocha\_Definitions\CSharp.vstemplate">
@@ -86,12 +124,30 @@
     <Content Include="ItemTemplates\Web\JavaScript\Mocha\_Definitions\VB.vstemplate" />
     <Content Include="ItemTemplates\Web\JavaScript\Mocha\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\Web\JavaScript\RequireJs\template.js" />
+    <None Include="ItemTemplates\PowerShell\CmdletAdvancedFunctionsComplete\cmdlet-adv-function-complete.ps1" />
+    <None Include="ItemTemplates\PowerShell\CmdletAdvancedFunctions\cmdlet-adv-function.ps1" />
+    <None Include="ItemTemplates\PowerShell\DscConfigurationSimple\dsc-configuration-simple.ps1" />
+    <None Include="ItemTemplates\PowerShell\DscResourceProvider\dsc-resource-provider.ps1" />
+    <None Include="ItemTemplates\Web\Misc\JsonSchema\schema.json" />
+    <Content Include="ItemTemplates\Web\Misc\JsonSchema\icon.png" />
+    <Content Include="ItemTemplates\Web\Misc\JsonSchema\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\Misc\JsonSchema\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\Misc\JsonSchema\_Definitions\Web.csharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\icon.png" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\weignore.txt" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\_Definitions\Web.VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\WebEssentials\WEIgnore\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\CustomScaffolderExtension\CustomScaffolderExtension.csproj" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\CustomScaffolderExtension\MyTemplate.vstemplate" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\CustomScaffolderExtension\_preprocess.xml" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\CustomScaffolder\MyTemplate.vstemplate" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\CustomScaffolder\_preprocess.xml" />
     <Content Include="ProjectTemplates\Extensibility\AspNetScaffolding\Basic\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Caliburn.Micro WPF Application.csproj" />
+    <Content Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\__TemplateIcon.png" />
     <Content Include="resources\Package.ico" />
     <None Include="ItemTemplates\Azure\CloudServicePlugin\CloudServicePlugin.csplugin" />
     <None Include="ItemTemplates\Build and NuGet\MSBuild\NuGetRestoreProjFile\build.proj">
@@ -167,8 +223,6 @@
     <Content Include="ItemTemplates\Misc\Svg\_Definitions\VB.vstemplate" />
     <Content Include="ItemTemplates\Misc\Svg\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\PowerShell\EmptyPowerShellFile\Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\PowerShell\EmptyPowerShellFile\Definitions\VB.vstemplate" />
-    <Content Include="ItemTemplates\PowerShell\EmptyPowerShellFile\Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\PowerShell\EmptyPowerShellFile\icon.png" />
     <Content Include="ItemTemplates\Test\NUnitFixture\Definitions\CSharp.vstemplate">
       <SubType>Designer</SubType>
@@ -352,7 +406,9 @@
     <None Include="ItemTemplates\Windows Phone\readme.md" />
     <None Include="ItemTemplates\Windows Store\readme.md" />
     <None Include="ItemTemplates\WPF\readme.md" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="ProjectTemplates\Cloud\readme.md" />
     <None Include="ProjectTemplates\Extensibility\BrowserLinkExtension\BrowserLinkExtensionTemplate.csproj" />
     <Content Include="ItemTemplates\Extensibility\Package Definition\project.pkgdef" />
@@ -430,12 +486,6 @@
     <Content Include="ProjectTemplates\Extensibility\BrowserLinkExtensionSimple\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\Extensibility\SnippetProject\MySnippets.csproj" />
     <Content Include="ProjectTemplates\Extensibility\SnippetProject\_Definitions\CSharp.vstemplate" />
-    <Content Include="ProjectTemplates\Extensibility\TemplatePack\TemplatePack.csproj">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ProjectTemplates\Extensibility\TemplatePack\_preprocess.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="ProjectTemplates\Web\Chrome Extension\ChromeExtensionProjectTemplate.csproj" />
     <Content Include="ProjectTemplates\Web\Chrome Extension\_Definitions\CSharp.vstemplate">
       <SubType>Designer</SubType>
@@ -537,11 +587,11 @@
     <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller using %24scope\_Definitions\VB.vstemplate" />
     <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller using %24scope\_Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller using %24scope\icon.png" />
-    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller\controller.js" />
-    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller\_Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller\_Definitions\VB.vstemplate" />
-    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller\_Definitions\Web.csharp.vstemplate" />
-    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller\icon.png" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller As\controller.js" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller As\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller As\_Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller As\_Definitions\Web.csharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\JavaScript\AngularJs\Controller As\icon.png" />
     <Content Include="ItemTemplates\TypeScript\AngularJs\TypeScript Directive\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\TypeScript\AngularJs\TypeScript Directive\_Definitions\VB.vstemplate" />
     <Content Include="ItemTemplates\TypeScript\AngularJs\TypeScript Directive\_Definitions\Web.csharp.vstemplate" />
@@ -631,9 +681,6 @@
     <None Include="ItemTemplates\Extensibility\VS Command Table\_Definitions\CSharp.vstemplate" />
     <None Include="ItemTemplates\Web\Misc\ReadmeMd\icon.pdn" />
     <None Include="ItemTemplates\Web\Misc\ReadmeMd\readme.md" />
-    <Content Include="ProjectTemplates\Extensibility\TemplatePack\_Definitions\_project.vstemplate.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="ProjectTemplates\Web\Durandal451\Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="ProjectTemplates\Web\Durandal451\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <None Include="ProjectTemplates\Web\Durandal451\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
@@ -674,7 +721,9 @@
     </None>
     <None Include="ProjectTemplates\Windows Store\TypeScript Blank\WSaTypeScript.jsproj" />
     <None Include="ProjectTemplates\Windows Store\TypeScript Blank\WSaTypeScript_TemporaryKey.pfx" />
-    <None Include="ProjectTemplates\Windows\readme.md" />
+    <None Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\App.config" />
+    <None Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\packages.config" />
+    <None Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Properties\Settings.settings" />
     <None Include="Properties\template-builder.props">
       <SubType>Designer</SubType>
     </None>
@@ -720,7 +769,31 @@
     <Content Include="Snippets\JavaScript\SideWaffle\ng.service.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallToMustHaveHappenedExactlyTimes.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallToMustHaveHappened.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallToMustHaveHappenedExactlyTwice.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallToMustNotHaveHappened.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallToMustHaveHappenedExactlyOnce.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyACallTo.Snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyAFakeStrict.Snippet">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Snippets\CSharp\SideWaffle\NancyModuleDelete.Snippet" />
+    <None Include="Snippets\CSharp\SideWaffle\FakeItEasyAFake.Snippet">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Snippets\CSharp\SideWaffle\NancyModuleGet.Snippet">
       <SubType>Designer</SubType>
     </None>
@@ -735,6 +808,8 @@
     <None Include="Snippets\CSharp\SideWaffle\WCFUsing.Snippet" />
     <None Include="Snippets\CSS\SideWaffle\css-linear-gradient.snippet" />
     <None Include="Snippets\CSS\SideWaffle\css-radial-gradient.snippet" />
+    <None Include="Snippets\JavaScript\SideWaffle\ng.module.snippet" />
+    <None Include="Snippets\JavaScript\SideWaffle\ng.testSpec.snippet" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -828,11 +903,13 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.XML" />
     <Reference Include="TemplateBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\TemplateBuilder.1.0.3.47-beta\lib\TemplateBuilder.dll</HintPath>
+      <HintPath>..\packages\TemplateBuilder.1.0.3.52-beta\lib\TemplateBuilder.dll</HintPath>
     </Reference>
     <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -853,6 +930,9 @@
     <Folder Include="Snippets\XML\SideWaffle\" />
   </ItemGroup>
   <ItemGroup>
+    <TemplateReference Include="ConsoleApplicationAsync.csproj">
+      <PathToProject>../Project%20Templates/Windows%20Desktop/ConsoleApplicationAsync/ConsoleApplicationAsync.csproj</PathToProject>
+    </TemplateReference>
     <TemplateReference Include="WebJobsHelloWorld.csproj">
       <PathToProject>..\Project Templates\Azure\WebJobs\WebJobsHelloWorld\WebJobsHelloWorld.csproj</PathToProject>
     </TemplateReference>
@@ -886,14 +966,29 @@
     <TemplateReference Include="Nancy.CSharp.SelfHostWithRazor.csproj">
       <PathToProject>..\Project Templates\Nancy.CSharp.SelfHostWithRazor\Nancy.CSharp.SelfHostWithRazor.csproj</PathToProject>
     </TemplateReference>
+    <TemplateReference Include="html5up.csproj">
+      <PathToProject>../Project%20Templates/html5up/html5up.csproj</PathToProject>
+    </TemplateReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="ItemTemplates\Windows Phone\CaliburnMicroBootstrapper\Bootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ItemTemplates\Extensibility\JsonSchemaSelector\JsonSchemaSelector.cs" />
     <Compile Include="ItemTemplates\Web\Nancy\NancyBootstrapper\bootstrapper.cs" />
     <Compile Include="ItemTemplates\Web\Nancy\NancyModule\module.cs" />
     <Compile Include="PackageConstants.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\AppBootstrapper.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Properties\AssemblyInfo.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Properties\Resources.Designer.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Properties\Settings.Designer.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\ViewModels\MainViewModel.cs" />
+    <Compile Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TemplatePackPackage.cs" />
     <Compile Include="Tooling\ProjectSelector2.xaml.cs">
       <DependentUpon>ProjectSelector2.xaml</DependentUpon>
@@ -908,6 +1003,7 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Properties\Resources.resx" />
     <EmbeddedResource Include="VSPackage.resx">
       <MergeWithCTO>true</MergeWithCTO>
       <ManifestResourceName>VSPackage</ManifestResourceName>
@@ -915,6 +1011,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProjectTemplates\Windows\Caliburn.Micro WPF Application\Views\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Tooling\ProjectSelector2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -924,7 +1028,7 @@
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>
   <PropertyGroup Label="TemplateBuilder">
-    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.0.3.47-beta\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.0.3.52-beta\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ProjectTemplates\Web\Durandal451\App_Start\BundleConfig.cs" />
@@ -961,10 +1065,22 @@
     <Compile Include="ProjectTemplates\Web\Durandal451\Results\ChallengeResult.cs" />
     <Compile Include="ProjectTemplates\Web\Durandal451\Startup.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LigerShark.Templates\LigerShark.Templates.csproj">
+      <Project>{a2a92f75-3703-4326-a474-1569979ec875}</Project>
+      <Name>LigerShark.Templates</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

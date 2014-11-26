@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatePack", "TemplatePack\TemplatePack.csproj", "{66E5E42A-2905-4A93-A3F7-FD26DA48A25F}"
 EndProject
@@ -14,13 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 		screenshot.png = screenshot.png
 		side-waffle.nuspec = side-waffle.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CF6C5BE5-C9DB-48B9-897D-C5B0A8F91150}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{30C5F3FE-3003-4BC0-9AC7-F084270A43DC}"
@@ -46,6 +39,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.CSharp.SelfHost", "Project Templates\Nancy.CSharp.SelfHost\Nancy.CSharp.SelfHost.csproj", "{35460AA4-B94A-4B64-9418-7243EC3D2F01}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.CSharp.SelfHostWithRazor", "Project Templates\Nancy.CSharp.SelfHostWithRazor\Nancy.CSharp.SelfHostWithRazor.csproj", "{68F5F5F3-B8BB-4911-875F-6F00AAE04EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationAsync", "Project Templates\Windows Desktop\ConsoleApplicationAsync\ConsoleApplicationAsync.csproj", "{80D7D5EF-F856-4A55-840B-0D07E7FD1718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigerShark.Templates", "LigerShark.Templates\LigerShark.Templates.csproj", "{A2A92F75-3703-4326-A474-1569979EC875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "html5up", "Project Templates\html5up\html5up.csproj", "{785C93D7-0D1F-4A13-BDC7-6917A5F8288F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +78,15 @@ Global
 		{35460AA4-B94A-4B64-9418-7243EC3D2F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F5F5F3-B8BB-4911-875F-6F00AAE04EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{68F5F5F3-B8BB-4911-875F-6F00AAE04EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A92F75-3703-4326-A474-1569979EC875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A92F75-3703-4326-A474-1569979EC875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A92F75-3703-4326-A474-1569979EC875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A92F75-3703-4326-A474-1569979EC875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785C93D7-0D1F-4A13-BDC7-6917A5F8288F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785C93D7-0D1F-4A13-BDC7-6917A5F8288F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785C93D7-0D1F-4A13-BDC7-6917A5F8288F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,5 +103,7 @@ Global
 		{0DD85688-3051-42C9-BBB3-9EAE9D9B473F} = {30C5F3FE-3003-4BC0-9AC7-F084270A43DC}
 		{35460AA4-B94A-4B64-9418-7243EC3D2F01} = {30C5F3FE-3003-4BC0-9AC7-F084270A43DC}
 		{68F5F5F3-B8BB-4911-875F-6F00AAE04EA6} = {30C5F3FE-3003-4BC0-9AC7-F084270A43DC}
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718} = {30C5F3FE-3003-4BC0-9AC7-F084270A43DC}
+		{785C93D7-0D1F-4A13-BDC7-6917A5F8288F} = {30C5F3FE-3003-4BC0-9AC7-F084270A43DC}
 	EndGlobalSection
 EndGlobal

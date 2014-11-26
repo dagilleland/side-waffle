@@ -1,17 +1,20 @@
 ﻿(function() {
     'use strict';
 
-    // TODO: replace app with your module name
-    angular.module('app').directive('$safeitemname$', ['$window', $safeitemname$]);
+    angular
+        .module('app')
+        .directive('$safeitemname$', $safeitemname$);
+
+    $safeitemname$.$inject = ['$window'];
     
     function $safeitemname$ ($window) {
         // Usage:
-        // 
+        //     <$safeitemname$></$safeitemname$>
         // Creates:
         // 
         var directive = {
             link: link,
-            restrict: 'A'
+            restrict: 'EA'
         };
         return directive;
 

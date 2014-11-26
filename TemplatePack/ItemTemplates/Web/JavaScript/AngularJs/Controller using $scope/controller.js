@@ -1,15 +1,16 @@
 ﻿(function () {
     'use strict';
 
-    var controllerId = '$safeitemname$';
+    angular
+        .module('app')
+        .controller('$safeitemname$', $safeitemname$);
 
-    // TODO: replace app with your module name
-    angular.module('app').controller(controllerId,
-        ['$scope', $safeitemname$]);
+    $safeitemname$.$inject = ['$scope']; 
 
     function $safeitemname$($scope) {
         $scope.title = '$safeitemname$';
-        $scope.activate = activate;
+
+        activate();
 
         function activate() { }
     }
